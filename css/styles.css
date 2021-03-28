@@ -1,0 +1,121 @@
+html {
+    background: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.triangle {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+}
+
+#bottom-triangle {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-top: 25vh solid transparent;
+    border-left: 76vw solid #178383;
+    border-bottom: 10vh solid #178383;
+    z-index: 3;
+}
+
+#mid-triangle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-left: 63.5vh solid transparent;
+    border-top: 90vh solid #1e9d9d;
+    border-right: 63.5vh solid transparent;
+    z-index: 1;
+}
+
+#right-triangle {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-left: 75vh solid transparent;
+    border-bottom: 100vh solid #178383;
+    z-index: 2;
+}
+
+.flex-contents-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex-contents-container,
+.content .one-fifth.column {
+    flex: 1;
+    display: flex;
+}
+
+.yellow-back { background: #ffe001; }
+.green-back { background: #66af45; }
+.purple-back { background: #954294; }
+
+.row {
+    margin: 3rem 3.5rem;
+}
+
+#portfolio p {
+    font-weight: 600;
+    z-index: 4;
+}
+
+.orange-back { background: orange; }
+.violet-back { background: violet; border: solid; }
+
+
+#hello {
+    margin: 0;
+    /* color: #1e9d9d; */
+    color: #178383;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#name {
+    margin: 0;
+    font-family: 'Martel', serif;
+    font-size: 4.5rem;
+}
+
+#desc-title {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+#desc-detail {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+#contacts-container p {
+    color: #fff;
+}
+
+
+#email-phone-container {
+    display: flex;
+}
+
+.row.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-bottom-child {
+    display: inline-block;
+    align-self: flex-end;
+}
