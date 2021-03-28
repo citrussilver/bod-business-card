@@ -38,18 +38,8 @@ html {
     height: 100vh;
 }
 
-.flex-contents-container,
-.content .one-fifth.column {
-    flex: 1;
-    display: flex;
-}
-
-.yellow-back { background: #ffe001; }
-.green-back { background: #66af45; }
-.purple-back { background: #954294; }
-
 .row {
-    margin: 3rem 3.5rem;
+    margin: 0 5vw;
 }
 
 #portfolio p {
@@ -57,13 +47,21 @@ html {
     z-index: 4;
 }
 
-.orange-back { background: orange; }
-.violet-back { background: violet; border: solid; }
+.orange-border { 
+    border: solid orange;
+}
 
+.violet-back { 
+    background: #330067;
+    border: solid 1.5px orange;
+}
+
+.teal-border {
+    border: solid #178383;
+}
 
 #hello {
     margin: 0;
-    /* color: #1e9d9d; */
     color: #178383;
     font-size: 1.3rem;
     font-weight: 600;
@@ -86,10 +84,10 @@ html {
     font-size: 1.2rem;
 }
 
+
 #contacts-container p {
     color: #fff;
 }
-
 
 #email-phone-container {
     display: flex;
