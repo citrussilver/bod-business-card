@@ -13,11 +13,6 @@ html {
 }
 
 #bottom-triangle {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 0;
-    height: 0;
     border-top: 25vh solid transparent;
     border-left: 76vw solid #178383;
     border-bottom: 10vh solid #178383;
@@ -25,11 +20,6 @@ html {
 }
 
 #mid-triangle {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 0;
-    height: 0;
     border-left: 63.5vh solid transparent;
     border-top: 90vh solid #1e9d9d;
     border-right: 63.5vh solid transparent;
@@ -37,11 +27,6 @@ html {
 }
 
 #right-triangle {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 0;
-    height: 0;
     border-left: 75vh solid transparent;
     border-bottom: 100vh solid #178383;
     z-index: 2;
