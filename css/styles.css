@@ -4,64 +4,33 @@ html {
     margin: 0;
 }
 
-.triangle {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 0;
-    height: 0;
-}
-
-#bottom-triangle {
-    border-top: 25vh solid transparent;
-    border-left: 76vw solid #178383;
-    border-bottom: 10vh solid #178383;
-    z-index: 3;
-}
-
-#mid-triangle {
-    border-left: 63.5vh solid transparent;
-    border-top: 90vh solid #1e9d9d;
-    border-right: 63.5vh solid transparent;
-    z-index: 1;
-}
-
-#right-triangle {
-    border-left: 75vh solid transparent;
-    border-bottom: 100vh solid #178383;
-    z-index: 2;
-}
-
-.flex-contents-container {
+/* .flex-contents-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
+.flex-contents-container,
+.content .one-fifth.column {
+    flex: 1;
+    display: flex;
+}
+
+.yellow-back { background: #ffe001; }
+.green-back { background: #66af45; }
+.purple-back { background: #954294; }
+
 .row {
-    margin: 0 5vw;
-}
+    margin: 3rem 3.5rem;
+} */
 
-#portfolio p {
-    font-weight: 600;
-    z-index: 4;
-}
+.orange-back { background: orange; }
+.violet-back { background: violet; border: solid; }
 
-.orange-border { 
-    border: solid orange;
-}
-
-.violet-back { 
-    background: #330067;
-    border: solid 1.5px orange;
-}
-
-.teal-border {
-    border: solid #178383;
-}
 
 #hello {
     margin: 0;
+    /* color: #1e9d9d; */
     color: #178383;
     font-size: 1.3rem;
     font-weight: 600;
@@ -85,10 +54,6 @@ html {
 }
 
 
-#contacts-container p {
-    color: #fff;
-}
-
 #email-phone-container {
     display: flex;
 }
@@ -101,4 +66,50 @@ html {
 .row-bottom-child {
     display: inline-block;
     align-self: flex-end;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.triangle-background {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    background-image: linear-gradient(-50deg, #178383 31%, transparent 31%), linear-gradient(-130deg, #1e9d9d 54%, transparent 54%), linear-gradient(10deg, #178383 25%, transparent 25%);
+}
+
+.grid {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr));
+    /* grid-template-columns: fit-content(45%) fit-content(45%) fit-content(5%); */
+}
+
+.three-grid-rows {
+    display: grid;
+    place-content: center;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.two-grid-rows {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.two-grid-columns {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div p.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
 }
