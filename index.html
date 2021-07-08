@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Business Card</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,43 +15,47 @@
 <body>
     <div class="triangle-background">
         <div class="grid">
-            <div id="header" class="two-rem-padding">
-                <p class="bold-font">&#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;&nbsp;&nbsp;Portfolio</p>
+            <div id="header">
+                <div>
+                    <p class="bold-font">Portfolio</p>
+                </div>
             </div>
-            <div id="name" class="two-rem-padding">
-                <p id="hello">Hello, I'm</p>
-                <p id="name" class="bold-font">Allie Grater</p>
-                <p id="desc-title" class="bold-font">UX/UI & Graphic Designer</p>
-                <p id="desc-detail">Huge design enthusiast. I love what I do and my clients too.</p>
+            <div id="name">
+                <div>
+                    <p id="hello">Hello, I'm</p>
+                    <p id="name">Lan Nacht</p>
+                    <p id="desc-title">Web Developer</p>
+                    <p id="desc-detail">"A good mix of tech and art goes a long way."</p>
+                </div>
             </div>
-            <div id="contact" class="misc-padding">
-                    <div>
-                        <p class="bold-font">&#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;&nbsp;&nbsp;Contact</p>
+            <div id="contact">
+                <div id="inside-grid">
+                    <div class="nested-grid">
+                        <section class="bold-font">Contact</section>
                     </div>
-                    <div class="two-grid-columns">
-                        <div>
-                            <p class="bold-font">Email</p>
-                            <p>helllo@grater.design</p>
-                        </div>
-                        <div>
-                            <p class="bold-font">Phone</p>
-                            <p>+90 12345 543241</p>
-                        </div>
+                    <div class="contents-section">
+                        <section class="bold-font">Email</section>
+                        <section>takoyaki@hoshii.dev</section>
                     </div>
+                    <div class="contents-section">
+                        <section class="bold-font">Phone</section>
+                        <section>+90 12345 543241</section>
+                    </div>
+                </div>
             </div>
-            <div id="image" class="two-rem-padding">
-                <div class="img-positioning">
-                    <img src="img/1.png">
+            <div id="image">
+                <div>
+                    <img src="img/pt80p.png">
                 </div>
             </div>
             <div id="find-me">
-                <div class="icons-grid white-text two-rem-padding">
-                    <div class="icons-grid-item">
-                        <p class="vertical-text" class="bold-font">Find me on&nbsp;&nbsp;&nbsp;&nbsp;&#9135;&#9135;&#9135;&#9135;</p>
+                <div class="icons-grid white-text">
+                    <div class="find-me-header">
+                        <section class="vertical-text" class="bold-font">Find me on</section>
                     </div>
-                    <div class="icons-grid-item"><i class="fab fa-github fa-2x"></i></div>
-                    <div class="icons-grid-item"><i class="fas fa-wind fa-2x"></i></div>
-                    <div class="icons-grid-item"><i class="fab fa-deezer fa-2x"></i></div>
+                    <div><a href="https://github.com/citrussilver" data-tool-tip="Github" alt="GitHub" target="_blank"><i class="fab fa-github fa-2x"></i></a></div>
+                    <div><a href="https://stackoverflow.com/users/3626672/leipzy" title="Stack Overflow" alt="Stack Overflow" target="_blank"><i class="fab fa-stack-overflow fa-2x"></i></a></div>
+                    <div><a href="https://teyvat-playlists.web.app/" title="Sample Fullstack App" alt="Sample Fullstack App" target="_blank"><i class="fas fa-sliders-h fa-2x"></i></a></div>
                 </div>
             </div>
         </div>
