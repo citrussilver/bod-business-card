@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body {
+    font-family: 'Abel', sans-serif;
+    background-color: #eee0d4;
+}
+
+.grid-container{
+    margin: 0 auto;
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.card {
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #9295AC;
+    border-radius: 20px;
+    /* background: linear-gradient(to bottom left, #840D4A, #0ABDC7); */
+    /* background: linear-gradient(to top right, #9295AC, #0ABDC7); */
+}
+
+.card::before, .card::after {
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    opacity: 1;
+}
+
+.card::before {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(0, 1);
+    transition: transform ease-out 250ms;
+}
+
+.card:hover::before{
+    transform: scale(1.05, 1);
+}
+
+.card::after {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transform: scale(1, 0);
+    transition: transform ease-out 250ms;
+}
+
+.card:hover::after{
+    transform: scale(1, 1.05);
+}
+
+.card-img {
+    border-radius: 20px;
+    transition: opacity ease-out 250ms;
+    opacity: 1;
+}
+
+.card:hover .card-img {
+    opacity: 0.2;
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0;
+    transition: opacity ease-out 250ms;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+}
