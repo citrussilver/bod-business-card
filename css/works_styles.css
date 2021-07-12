@@ -20,13 +20,12 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #9295AC;
+    /* background-color: #9295AC; */
     border-radius: 20px;
-    /* background: linear-gradient(to bottom left, #840D4A, #0ABDC7); */
-    /* background: linear-gradient(to top right, #9295AC, #0ABDC7); */
+    background: linear-gradient(to top right, #E67716, #0ABDC8);
 }
 
-.card::before, .card::after {
+.card a >div::before, .card a >div::after {
     content: '';
     position: absolute;
     top: 1.25em;
@@ -36,36 +35,39 @@ body {
     opacity: 1;
 }
 
-.card::before {
+.card a >div::before {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     transform: scale(0, 1);
     transition: transform ease-out 250ms;
 }
 
-.card:hover::before{
+.card a >div:hover::before{
     transform: scale(1.05, 1);
 }
 
-.card::after {
+.card a >div::after {
     border-left: 1px solid white;
     border-right: 1px solid white;
     transform: scale(1, 0);
     transition: transform ease-out 250ms;
 }
 
-.card:hover::after{
+.card a >div:hover::after{
     transform: scale(1, 1.05);
 }
 
 .card-img {
+    width: 250px;
+    height: 250px;
+    transform: scale(0.92, 0.92);
     border-radius: 20px;
     transition: opacity ease-out 250ms;
     opacity: 1;
 }
 
-.card:hover .card-img {
-    opacity: 0.2;
+.card a >div:hover .card-img {
+    opacity: 0.1;
 }
 
 .card-text {
@@ -78,6 +80,19 @@ body {
     transition: opacity ease-out 250ms;
 }
 
-.card:hover .card-text {
+.card a >div:hover .card-text {
     opacity: 1;
+}
+
+@media only screen and (max-width:600px) {
+
+    h2{
+        text-align: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: repeat(4, 1fr);
+        place-content: center;
+    }
 }
