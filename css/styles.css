@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 :root {
     --darkgrey: #4a4a4a;
 }
@@ -56,7 +62,6 @@ html, body {
 .grid {
     display: grid;
     height: 100vh;
-    /* grid-auto-flow: column; */
     grid-template-columns: 0.75fr 0.75fr 0.25fr;
     grid-template-rows: 0.30fr 1fr 1fr;
     grid-template-areas: 
@@ -65,39 +70,23 @@ html, body {
     "contact image find-me"
 }
 
-.grid-items {
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 #header {
     grid-area: header;
 }
 
 #header > div {
+    opacity: 0;
     width: 90%;
     margin: 0 auto;
     position: relative;
     top: 0rem;
     left: -0.75rem;
     animation-name: portfolio-div-fadein;
-    animation-duration: 1.5s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
 }
 
 @keyframes portfolio-div-fadein {
-    from { opacity: 0; }
     to {
         opacity: 1;
         top: 3rem;
@@ -127,15 +116,15 @@ html, body {
 }
 
 #name > div {
+    opacity: 0;
     width: 80%;
     height: 100%;
     margin: 0 auto;
     position: relative;
     top: 3rem;
-    opacity: 0;
     animation-name: name-div-fadein;
-    animation-delay: 1.5s;
-    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
     /* animation: name-div-fadein 2s forwards; */
 }
@@ -167,8 +156,8 @@ html, body {
     bottom: -3rem;
     opacity: 0;
     animation-name: img-fadein;
-    animation-delay: 3.5s;
-    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
 }
 
@@ -186,6 +175,7 @@ html, body {
 }
 
 #contact > div {
+    opacity: 0;
     margin: 0 auto;
     width: 80%;
     position: relative;
@@ -195,16 +185,14 @@ html, body {
     position: absolute;
     left: 4vw;
     bottom: 5vh; */
-    opacity: 0;
     animation-name: contact-div-fadein;
     animation-delay: 2.5s;
-    animation-duration: 1.5s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
     /* animation: contact-div-fadein 2s forwards; */
 }
 
 @keyframes contact-div-fadein {
-    from { opacity: 0; }
     to {
         top: 22vh;
         opacity: 1;
@@ -269,14 +257,14 @@ html, body {
 } */
 
 #find-me > div {
+    opacity: 0;
     margin: 0 auto;
     position: absolute;
     bottom: -5vh;
     right: 10vw;
-    opacity: 0;
     animation-name: findme-div-fadein;
-    animation-delay: 4.5s;
-    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;
 }
 
@@ -361,7 +349,7 @@ div .vertical-text {
         opacity: 0;
         animation-name: name-div-fadein;
         animation-delay: 1.5s;
-        animation-duration: 1.5s;
+        animation-duration: 0.8s;
         animation-fill-mode: forwards;
     }
 
@@ -381,7 +369,7 @@ div .vertical-text {
         opacity: 0;
         animation-name: img-fadein;
         animation-delay: 3.5s;
-        animation-duration: 1.5s;
+        animation-duration: 0.8s;
         animation-fill-mode: forwards;
     }
 
@@ -454,7 +442,7 @@ div .vertical-text {
         opacity: 0;
         animation-name: findme-div-fadein;
         animation-delay: 4.5s;
-        animation-duration: 1.5s;
+        animation-duration: 0.8s;
         animation-fill-mode: forwards;
     }
 
