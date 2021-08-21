@@ -6,6 +6,9 @@
 
 :root {
     --darkgrey: #4a4a4a;
+    font-size: 16px;
+    --anim-duration: 0.8s;
+    --anim-fill-mode: forwards;
 }
 
 html, body {
@@ -82,8 +85,8 @@ html, body {
     top: 0rem;
     left: -0.75rem;
     animation-name: portfolio-div-fadein;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
+    animation-duration: var(--anim-duration);
+    animation-fill-mode: var(--anim-fill-mode);
 }
 
 @keyframes portfolio-div-fadein {
@@ -124,8 +127,8 @@ html, body {
     top: 3rem;
     animation-name: name-div-fadein;
     animation-delay: 1s;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
+    animation-duration: var(--anim-duration);
+    animation-fill-mode: var(--anim-fill-mode);
     /* animation: name-div-fadein 2s forwards; */
 }
 
@@ -157,8 +160,8 @@ html, body {
     opacity: 0;
     animation-name: img-fadein;
     animation-delay: 2s;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
+    animation-duration: var(--anim-duration);
+    animation-fill-mode: var(--anim-fill-mode);
 }
 
 @keyframes img-fadein {
@@ -187,8 +190,8 @@ html, body {
     bottom: 5vh; */
     animation-name: contact-div-fadein;
     animation-delay: 2.5s;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
+    animation-duration: var(--anim-duration);
+    animation-fill-mode: var(--anim-fill-mode);
     /* animation: contact-div-fadein 2s forwards; */
 }
 
@@ -264,8 +267,8 @@ html, body {
     right: 10vw;
     animation-name: findme-div-fadein;
     animation-delay: 3s;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
+    animation-duration: var(--anim-duration);
+    animation-fill-mode: var(--anim-fill-mode);
 }
 
 @keyframes findme-div-fadein {
@@ -349,8 +352,8 @@ div .vertical-text {
         opacity: 0;
         animation-name: name-div-fadein;
         animation-delay: 1.5s;
-        animation-duration: 0.8s;
-        animation-fill-mode: forwards;
+        animation-duration: var(--anim-duration);
+        animation-fill-mode: var(--anim-fill-mode);
     }
 
     @keyframes name-div-fadein {
@@ -369,8 +372,8 @@ div .vertical-text {
         opacity: 0;
         animation-name: img-fadein;
         animation-delay: 3.5s;
-        animation-duration: 0.8s;
-        animation-fill-mode: forwards;
+        animation-duration: var(--anim-duration);
+        animation-fill-mode: var(--anim-fill-mode);
     }
 
     @keyframes img-fadein {
@@ -442,8 +445,8 @@ div .vertical-text {
         opacity: 0;
         animation-name: findme-div-fadein;
         animation-delay: 4.5s;
-        animation-duration: 0.8s;
-        animation-fill-mode: forwards;
+        animation-duration: var(--anim-duration);
+        animation-fill-mode: var(--anim-fill-mode);
     }
 
     @keyframes findme-div-fadein {
