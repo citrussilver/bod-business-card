@@ -189,13 +189,25 @@ input[name="navi-r"] {
 
 @media only screen and (max-width:600px) {
 
-    h2{
-        text-align: center;
+    #title {
+        margin-top: 50%;
     }
 
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-auto-rows: repeat(4, 1fr);
-        place-content: center;
+    #title div {
+        font-size: 2rem;
+    }
+
+    .slidershow {
+        width: 80%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .navi {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
     }
 }
