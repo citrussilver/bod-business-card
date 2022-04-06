@@ -4,57 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Works Display</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/works_styles.css">
+    <title>Web App Projects</title>
 </head>
 <body>
     <div id="title">
-        <div>My Personal Projects</div>
+        <div>My Web App Projects</div>
     </div>
-    <div class="slidershow middle">
-        <div class="slides">
-            <input type="radio" name="navi-r" id="r1" checked>
-            <input type="radio" name="navi-r" id="r2">
-            <input type="radio" name="navi-r" id="r3">
-            <div class="card slide s1">
-                <a href="https://teyvat-playlists.web.app/" target="_blank">
-                    <div>
-                        <img class="card-img" src="img/works_images/tp2.png" alt="">
-                        <div class="card-text">
-                            <h3 class="card-title">Teyvat Playlists</h3>
-                            <section class="card-body">Playlist manager created on Vue.js and Firebase</section>
-                        </div>
+    <div class="slider">
+        <div class="slide active">
+            <a href="https://anime-quotes-ruby.vercel.app/" target="_blank">
+                <div>
+                    <img class="card-img" src="img/works_images/raq.png" alt="genshin-food-lists">
+                    <div class="card-text">
+                        <h2 class="card-title">Random Anime Quotes</h2>
+                        <p class="card-body">A simple web app created on HTML, CSS and vanilla JavaScript utilizing 3rd party API</p>
                     </div>
-                </a>
-            </div>
-            <div class="card slide s1">
-                <a href="https://genshin-food-inv.herokuapp.com/" target="_blank">
-                    <div>
-                        <img class="card-img" src="img/works_images/gfl2.png" alt="">
-                        <div class="card-text">
-                            <h3 class="card-title">Genshin Foods List</h3>
-                            <section class="card-body">Genshin Food inventory tracker created on Vue.js MongoDB Node.js</section>
-                        </div>
+                </div>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="https://teyvat-playlists.web.app/" target="_blank">
+                <div>
+                    <img class="card-img" src="img/works_images/tp2.png" alt="teyvat-playlists">
+                    <div class="card-text">
+                        <h2 class="card-title">Teyvat Playlists</h2>
+                        <p class="card-body">Playlist manager created on Vue.js and Firebase</p>
                     </div>
-                </a>
-            </div>
-            <div class="card slide s1">
-                <a href="https://genshinwishcounter.xyz/" target="_blank">
-                    <div>
-                        <img class="card-img" src="img/works_images/sgc2.png" alt="">
-                        <div class="card-text">
-                            <h3 class="card-title">Gacha Counter</h3>
-                            <section class="card-body">A simple Gacha counter created using Vite, Vue.js</section>
-                        </div>
+                </div>
+            </a>
+            <!-- <div class="info">
+                <h2>Teyvat Playlists</h2>
+                <p>Playlist manager created on Vue.js and Firebase</p>
+            </div> -->
+        </div>
+        <div class="slide">
+            <a href="https://genshin-food-inv.herokuapp.com/" target="_blank">
+                <div>
+                    <img class="card-img" src="img/works_images/gfl2.png" alt="genshin-food-lists">
+                    <div class="card-text">
+                        <h2 class="card-title">Genshin Foods List</h2>
+                        <p class="card-body">Genshin Food ingredients tracker created on Vue.js, MongoDB and Node.js</p>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="https://genshinwishcounter.xyz/" target="_blank">
+                <div>
+                    <img class="card-img" src="img/works_images/sgc3.png" alt="genshin-food-lists">
+                    <div class="card-text">
+                        <h2 class="card-title">Gacha Counter</h2>
+                        <p class="card-body">A gacha counter utilizing Vite, Vuex, Vue.js</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="navigation">
+            <i class="fas fa-chevron-left prev-btn"></i>
+            <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+
+        <div class="navigation-visibility">
+            <div class="slide-icon active"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
         </div>
     </div>
-    <div class="navi">
-        <label for="r1" class="sphere"></label>
-        <label for="r2" class="sphere"></label>
-        <label for="r3" class="sphere"></label>
-    </div>
+    <script type="text/javascript" src="/script.js"></script>
 </body>
 </html>
