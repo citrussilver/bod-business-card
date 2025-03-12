@@ -15,11 +15,13 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #33313B;
+    overflow: hidden;
 }
 
 #title {
     margin-top: 2rem;
     color: #fff;
+    /* text-shadow: 1px 1px 2px #a21557, 0 0 1em #e11919, 0 0 0.2em #8810ec; */
 }
 
 #title div {
@@ -28,7 +30,7 @@ body {
 
 .slider {
     position: relative;
-    background: #2C394B;
+    background: -moz-linear-gradient(bottom left, rgb(60, 79, 101, 0.5), rgb(131, 76, 105, 0.5));
     width: 800px;
     min-height: 500px;
     margin: 20px;
@@ -204,6 +206,61 @@ body {
 
 .slide a > div:hover .card-text {
     opacity: 1;
+}
+
+.background-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.background-element code {
+    font-size: 11pt;
+}
+
+.slant-text {
+    transform: rotate(-3.5deg);
+    /* Legacy vendor prefixes that you probably don't need... */
+    /* Safari */
+    -webkit-transform: rotate(-0.9deg);
+    /* Firefox */
+    -moz-transform: rotate(-0.9deg);
+    /* IE */
+    -ms-transform: rotate(-0.9deg);
+    /* Opera */
+    -o-transform: rotate(-0.9deg);
+}
+
+.gradientify {
+    background-image: linear-gradient(to left, rgb(185, 167, 244), rgb(234, 162, 52) , rgb(236, 159, 213));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.opacify {
+    opacity: 0.7;
+}
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
 }
 
 @media (max-width: 900px) {
