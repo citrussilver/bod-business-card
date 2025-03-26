@@ -163,6 +163,7 @@ html, body {
     animation-delay: 2s;
     animation-duration: var(--anim-duration);
     animation-fill-mode: var(--anim-fill-mode);
+    height: 100%;
 }
 
 @keyframes img-fadein {
