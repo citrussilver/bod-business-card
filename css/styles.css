@@ -207,7 +207,7 @@ html, body {
 
 #contact #inside-grid {
     display: grid;
-    grid-template-rows: 1fr 1f;
+    grid-template-rows: 1fr 1fr;
 }
 
 /* #contact #inside-grid section {
