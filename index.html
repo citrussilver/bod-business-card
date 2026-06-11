@@ -23,10 +23,10 @@
                 <div id="name-items">
                     <p id="hello">Hello, I'm</p>
                     <section class="darkgrey">
-                        <p id="name">Firstname Lastname</p>
-                        <p id="desc-title">Web Developer</p>
+                        <p id="display-name"></p>
+                        <p id="desc-title"></p>
                         <div>
-                            <p class="desc-detail">“Technology and art sparks a unique mix of creativity.”</p>
+                            <p class="desc-detail" id="tagline"></p>
                             <!-- <div style="display: flex; justify-content: end;">
                                 <p class="desc-detail" style="display: none;">― Name here</p>
                             </div> -->
@@ -41,11 +41,11 @@
                     </div>
                     <div class="contents-section">
                         <section class="contact-headers">Email</section>
-                        <section>you@example.com</section>
+                        <section id="contact-email"></section>
                     </div>
                     <div id="phone" class="contents-section">
                         <section class="contact-headers">Phone</section>
-                        <section>+1 234 567 890</section>
+                        <section id="contact-phone"></section>
                     </div>
                 </div>
             </div>
@@ -66,5 +66,7 @@
             </div>
         </div>
     </div>
+    <script src="config.js"></script>
+    <script src="js/render-card.js"></script>
 </body>
 </html>
