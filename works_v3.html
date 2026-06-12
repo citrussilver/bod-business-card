@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/works_v3_styles.css">
+    <title>Web App Projects</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <span>My Web App Projects</span>
+        <span class="page-header__sep" aria-hidden="true">·</span>
+        <span id="header-name"></span>
+    </header>
+    <section class="carousel" aria-label="Project carousel">
+        <div class="text-panel track">
+            <div class="track-inner">
+                <article class="text-slide">
+                    <span class="slide-label">Expense tracker</span>
+                    <h2 class="slide-title">Satsu Floss</h2>
+                    <p class="slide-desc">A CRUD app with login and authentication built on Laravel, Inertia and
+                        Vue 3.</p>
+                    <a class="slide-more" href="https://satsufloss.koyeb.app/" target="_blank" rel="noopener">More</a>
+                </article>
+                <article class="text-slide">
+                    <span class="slide-label">Notes app</span>
+                    <h2 class="slide-title">Memo Grass</h2>
+                    <p class="slide-desc">A CRUD notes keeper built on Vue 3 and Firebase for quick everyday
+                        capture.</p>
+                    <a class="slide-more" href="https://memo-grass.web.app/" target="_blank" rel="noopener">More</a>
+                </article>
+                <article class="text-slide">
+                    <span class="slide-label">Playlists Manager</span>
+                    <h2 class="slide-title">Teyvat Playlists</h2>
+                    <p class="slide-desc">A playlist manager created on Vue 3 and Firebase for organizing game
+                        soundtracks.</p>
+                    <a class="slide-more" href="https://teyvat-playlists.web.app/" target="_blank"
+                        rel="noopener">More</a>
+                </article>
+                <article class="text-slide">
+                    <span class="slide-label">Slide Four</span>
+                    <h2 class="slide-title">Blur loading card gallery.</h2>
+                    <p class="slide-desc">A simple webpage focused on modern animation, blur loading, and
+                        expanding cards.</p>
+                    <a class="slide-more" href="https://genshin-blur-cards.vercel.app/" target="_blank"
+                        rel="noopener">More</a>
+                </article>
+            </div>
+        </div>
+
+        <div class="gallery-panel">
+            <div class="mosaic">
+                <div class="tile tile--overlap">
+                    <div class="track-inner">
+                        <img src="img/works_images/stf.jpg" alt="">
+                        <img src="img/works_images/mmg.jpg" alt="">
+                        <img src="img/works_images/tp2.png" alt="">
+                        <img src="img/works_images/gbcc.jpg" alt="">
+                    </div>
+                </div>
+                <div class="tile tile--top">
+                    <div class="track-inner">
+                        <img src="img/works_images/mmg.jpg" alt="">
+                        <img src="img/works_images/tp2.png" alt="">
+                        <img src="img/works_images/gbcc.jpg" alt="">
+                        <img src="img/works_images/stf.jpg" alt="">
+                    </div>
+                </div>
+                <div class="tile tile--bottom">
+                    <div class="track-inner">
+                        <img src="img/works_images/tp2.png" alt="">
+                        <img src="img/works_images/gbcc.jpg" alt="">
+                        <img src="img/works_images/stf.jpg" alt="">
+                        <img src="img/works_images/mmg.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="carousel-nav" aria-label="Carousel navigation">
+            <button type="button" class="nav-btn nav-btn--prev" aria-label="Previous slide">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="nav-btn nav-btn--next" aria-label="Next slide">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </section>
+
+    <script src="config.js"></script>
+    <script src="js/render-card.js"></script>
+    <script src="js/works_v3.js"></script>
+</body>
+
+</html>
