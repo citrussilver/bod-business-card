@@ -10,6 +10,7 @@
 body {
     font-family: 'Abel', sans-serif;
     height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,7 +98,8 @@ body {
 }
 
 .navigation {
-    height: 500px;
+    position: absolute;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -214,25 +216,26 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    height: 100svh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
+    overflow: hidden;
 }
 
 .background-element code {
     font-size: 11pt;
+    display: block;
+    line-height: 1.35;
+    word-break: break-all;
 }
 
 .slant-text {
-    transform: rotate(-3.5deg);
-    /* Legacy vendor prefixes that you probably don't need... */
-    /* Safari */
+    transform: rotate(-0.9deg);
     -webkit-transform: rotate(-0.9deg);
-    /* Firefox */
     -moz-transform: rotate(-0.9deg);
-    /* IE */
     -ms-transform: rotate(-0.9deg);
-    /* Opera */
     -o-transform: rotate(-0.9deg);
+    pointer-events: none;
 }
 
 .gradientify {
@@ -240,6 +243,7 @@ body {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: transparent;
 }
 
@@ -247,11 +251,13 @@ body {
     opacity: 0.7;
 }
 
-svg {
-    display: inline-block;
+.wave-svg {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: auto;
 }
 
 .svg-container {
@@ -267,6 +273,8 @@ svg {
 
     .slider {
         width: 100%;
+        max-width: 100%;
+        min-height: min(500px, 68svh);
     }
 
     .slider .slide .info {
@@ -277,7 +285,77 @@ svg {
     }
 }
 
+@media (max-width: 768px) {
+
+    body {
+        justify-content: flex-start;
+        padding: max(0.75rem, env(safe-area-inset-top)) 1rem max(0.75rem, env(safe-area-inset-bottom));
+        gap: 0.75rem;
+    }
+
+    #title {
+        margin-top: 0;
+        flex-shrink: 0;
+        text-align: center;
+    }
+
+    #title div {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .slant-text {
+        position: absolute;
+        top: 38vw;
+        left: -5%;
+        right: -5%;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    .background-element code {
+        font-size: 7pt;
+        line-height: 1.3;
+    }
+
+    .slider {
+        flex: 1 1 auto;
+        width: 100%;
+        min-height: 0;
+        max-height: min(58svh, 520px);
+        height: auto;
+        aspect-ratio: 4 / 5;
+        margin: 0;
+    }
+
+    .navigation-visibility .slide-icon {
+        transform: translateY(-1.25rem);
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 1.5em;
+        padding: 8px;
+    }
+}
+
 @media (max-width: 500px) {
+
+    #title div {
+        font-size: 1.35rem;
+    }
+
+    .slant-text {
+        top: 36vw;
+    }
+
+    .background-element code {
+        font-size: 6pt;
+    }
+
+    .slider {
+        max-height: min(62svh, 480px);
+        aspect-ratio: 3 / 4;
+    }
 
     .slider .slide .info h2 {
         font-size: 1.8em;

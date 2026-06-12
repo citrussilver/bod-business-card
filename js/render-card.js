@@ -8,6 +8,7 @@
   };
 
   setText("display-name", config.name);
+  setText("header-name", config.name);
   setText("desc-title", config.title);
   setText("tagline", config.tagline);
   setText("contact-email", config.email);
